@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <title>Price Bakery</title>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="nav">
+    <h2 class="prince">prince <span>.</span></h2>
+    <div class="bgr-div">
+      <div class="hours" onclick="toggleHours()"><p>HOURS</p></div>
+      <div class="burger" id="burger">
+        <div class="bar"></div>
+        <div class="bar two"></div>
+        <div class="bar three"></div>
+      </div>
+    </div>
+  </div>
+  <div class="menu" id='menu'>
+    <div class="nav-title">
+      <img src="./prince.PNG">
+      <div class="title-text">
+        <h3>PRINCE BAKERY</h3>
+        <h3 class="sub">NAVIGATION</h3>
+      </div>
+    </div>
+    <a href="./contact.html">    <p>Wholesale Contact</p>    </a>
+    <p>Instagram</p>
+    <p>Facebook</p>
+  </div>
+  <div class="main">
+    <div class="prince-intro">
+      <img src="./prince.PNG">
+      <h1>prince</h1>
+      <p>BAKERY</p>
+    </div>
+    <div class="scroll-div">
+      <i class="fas fa-mouse"></i>
+    </div>
+  </div>
+  <hr>
+  <div id="faq">
+    <ul>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Example Question #1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae debitis iusto voluptatum doloribus rem, qui nesciunt labore tempore fugit iste deserunt incidunt error provident repudiandae laudantium quo ipsa unde perspiciatis, nihil autem distinctio! Deserunt, aspernatur.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Example Question #2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi, quia provident facere recusandae itaque assumenda fuga veniam dicta earum dolorem architecto facilis nisi pariatur.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Example Question #3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas placeat assumenda mollitia magni consequatur dolorum, quod nihil distinctio aperiam officia alias! Voluptate dolore ex officiis sit, magnam non a, eligendi pariatur aut, earum dolores tenetur ipsam id illo deleniti. Laudantium deserunt eaque ipsam voluptatum consequuntur voluptatibus sed minima ad accusamus debitis eos similique laboriosam, molestiae? Consequatur neque tempore quis. Eligendi, in ut aspernatur esse nesciunt libero.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Example Question #4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas placeat assumenda mollitia magni consequatur dolorum, quod nihil distinctio aperiam officia alias! Voluptate dolore ex officiis sit, magnam non a, eligendi pariatur aut, earum dolores tenetur ipsam id illo deleniti. Laudantium deserunt eaque ipsam voluptatum consequuntur voluptatibus sed minima ad accusamus debitis eos similique laboriosam, molestiae? Consequatur neque tempore quis. Eligendi, in ut aspernatur esse nesciunt libero.</p>
+      </li>
+    </ul>
+  </div>
+  <div class="hour-details" id="hours">
+    <h3>OPERATING HOURS</h3>
+    <div class="close" onclick="toggleHours()"><p>X</p></div>
+    <div class="times">
+      <div class="hour-left">
+        <p>Monday: 9-5</p>
+        <p>Tuesday: 9-5</p>
+        <p>Wednesday: 9-5</p>
+        <p>Thursday: 9-5</p>
+      </div>
+      <div class="hour-right">
+        <p>Friday: 9-5</p>
+        <p>Saturday: 9-5</p>
+        <p>Sunday: 9-5</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="contact">
+      <p>Contact us <span>.</span></p>
+    </div>
+    <p>(914) 123 4567</p>
+    <p>example@example.com</p>
+  </footer>
+  <script>
+    const menu = document.getElementById('menu');
+    function toggleMenu() {
+      menu.classList.toggle('toggleMenu');
+    }
+    document.getElementById('burger').addEventListener('click', toggleMenu);
+    // const arr = document.getElementsByClassName('animate');
+    // for (var i in arr) {
+    //   arr[i].className += ' toggle';
+    // }
+  </script>
+</body>
+</html>

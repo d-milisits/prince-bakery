@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us!</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <script>
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+      window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="contact-page">
+      <a href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+      <form action="https://formspree.io/zach@flfloorplans.com" method="POST"> 
+        <div class="group-div">
+          <h1>Wholesale Contact</h1>
+          <p>Let us know what we can do for you.</p>
+          <div class="group one">      
+            <input id="name" name="name" type="text" autocomplete="off" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>* Name</label>
+          </div>
+          <div class="group two">      
+            <input id="email" name="email" type="text" autocomplete="off" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>* E-Mail</label>
+          </div>
+          <div class="group three">      
+            <input id="message" name="message" type="text" autocomplete="off" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>* Message</label>
+          </div>
+          <button class="btn">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src='app.js'></script>
+</html>
